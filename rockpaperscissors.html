@@ -2,7 +2,23 @@
 <html>
 
 <script>
-    //script will go here maybe
+    function computerPlay; {
+
+        var computerSelection = ['rock', 'paper', 'scissors'];
+
+        var rand = Math.floor(Math.random() * computerSelection.length);
+
+        function showquote(){
+            document.getElementById('quote').innerHTML = computerSelection[rand];
+        }
+        showquote();
+
+        let playerSelection;
+
+
+        return "You lose! " + computerSelection " beats " + playerSelection "!";
+    }
+
 </script>
 
 </html>
