@@ -50,7 +50,7 @@ else if (playerSelection === "rock" && computerSelection === "paper"){
 } else if (playerSelection === "paper" && computerSelection === "scissors"){
     console.log("Scissors beats paper, you lose!");
 } 
-    //Broken
+    //Broken D:
 else {
     console.log("Wow you broke it.");
 }
