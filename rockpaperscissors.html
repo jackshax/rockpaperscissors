@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<script>
-    function computerPlay; {
-
-        var computerSelection = ['rock', 'paper', 'scissors'];
-
-        var rand = Math.floor(Math.random() * computerSelection.length);
-
-        function showquote(){
-            document.getElementById('quote').innerHTML = computerSelection[rand];
+<head>
+    Rock Paper Scissors Game
+</head>
+<body>
+    <p id="rps"></p>
+    <script>
+        function computerPlay(){
+            const computerSelection = ["Rock", "Paper", "Scissors"];
+            let randInt = Math.floor(Math.random() * computerSelection.length);
+            console.log(randInt, computerSelection[randInt]);
         }
-        showquote();
 
-        let playerSelection;
+        computerPlay();
+        
+        function playerSelection(){
+            const playerSelection = ["Rock", "Paper", "Scissors"];
+            let pSelect = prompt("Rock, paper, or scissors?");
+
+        /*if (playerSelection === "Rock"){
+            document.getElementById("rps").innerHTML =
+            "Rock!";
+        } else if (playerSelection === "Paper"){
+            document.getElementById("rps").innerHTML =
+            "Paper!";
+        } else if (playerSelection === "Scissors"){
+            document.getElementById("rps").innerHTML =
+            "Scissors!";
+        } else {
+            document.getElementById("rps").innerHTML =
+            "What?";*/
+        }
 
 
-        return "You lose! " + computerSelection " beats " + playerSelection "!";
-    }
+        function playRound(playerSelection, computerSelection) {
+            //code here
+        }
 
-</script>
+        /*const playerSelection = "Rock";
+        const computerSelection = computerPlay();
+        console.log(playRound(playerSelection, computerSelection));*/
+        //return ("You lose! " + computerSelection + " beats " + playerSelection + "!");
 
+    </script>
+</body>
 </html>
