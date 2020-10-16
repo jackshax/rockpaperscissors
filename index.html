@@ -6,11 +6,19 @@
     </h2>
 </head>
 <body>
-    <form id="form1" onsubmit="whichButton(this);">
-        <button id="rk" type="submit" onclick="userButton = 0">Rock</button>
-        <button id="pp" type="submit" onclick="userButton = 1">Paper</button>
-        <button id="sc" type="submit" onclick="userButton = 2">Scissors</button>
+    <!--
+    <form id="selection" onsubmit="whichButton(this);">
+        <button type="submit" onclick="userButton('rock')">Rock</button>
+        <button type="submit" onclick="userButton('paper')">Paper</button>
+        <button type="submit" onclick="userButton('scissors')">Scissors</button>
+    </form> -->
+
+    <div id="selection">
+        <button onclick="userButton('rock')">Rock</button>
+        <button onclick="userButton('paper')">Paper</button>
+        <button onclick="userButton('scissors')">Scissors</button>
     </form>
+
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

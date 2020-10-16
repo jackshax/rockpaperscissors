@@ -1,6 +1,7 @@
 let computerSelection = ["rock", "paper", "scissors"];
 let playerSelection;
-let userButton;
+// let playerSelection = ["rock", "paper", "scissors"];
+// let userButton;
 
 function computerPlay(){
     let randInt = Math.round( Math.random() * (computerSelection.length - 1) );
@@ -8,27 +9,29 @@ function computerPlay(){
     computerSelection = computerSelection[randInt];
 }
 
-//computerPlay()
+computerPlay()
 
 /*let playerSelection = prompt("Rock, paper, or scissors?", "Paper");
     playerSelection = playerSelection.toLowerCase();
     console.log(playerSelection);*/
 
-function whichButton(buttonElement){
-    alert(buttonElement.id);
+function userButton(choice){
+    // alert(buttonElement.id);
 
+    playerSelection = choice;
+/*
     if( userButton = 0 ){
-        let playerSelection = "rock";
+        playerSelection[1];
     }
     else if( userButton = 1 ){
-        let playerSelection = "paper";
+        playerSelection[2];
     }
     else if( userButton = 2 ){
-        let playerSelection = "scissors";
+        playerSelection[3];
     } else {
         console.log("Still broken")
-        let playerSelection = "gun";
-    }
+        playerSelection = "gun";
+    } */
 }
 
     //Draw
