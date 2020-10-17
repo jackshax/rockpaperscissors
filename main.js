@@ -17,7 +17,6 @@ computerPlay()
 
 function userButton(choice){
     // alert(buttonElement.id);
-
     playerSelection = choice;
 /*
     if( userButton = 0 ){
@@ -33,6 +32,8 @@ function userButton(choice){
         playerSelection = "gun";
     } */
 }
+
+    console.log("Player " + playerSelection);
 
     //Draw
 if (playerSelection === computerSelection){
