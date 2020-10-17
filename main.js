@@ -1,5 +1,5 @@
 let computerSelection = ["rock", "paper", "scissors"];
-let playerSelection;
+var playerSelection = "none";
 // let playerSelection = ["rock", "paper", "scissors"];
 // let userButton;
 
