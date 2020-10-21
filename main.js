@@ -1,4 +1,4 @@
-let playerSelection; 
+let playerSelection;
     playerSelection = prompt("Rock, paper, or scissors?", "Paper");
     playerSelection = playerSelection.toLowerCase();
     console.log(playerSelection);
@@ -16,7 +16,7 @@ computerPlay();
 console.log("Player " + playerSelection);   
 
 //Game
-function playRound(playerSelection, computerSelection) {
+//function playRound(playerSelection, computerSelection) {
         //Draw
     if (playerSelection === computerSelection){
         console.log("Draw, " + playerSelection + " and " + computerSelection + ".");
@@ -40,7 +40,7 @@ function playRound(playerSelection, computerSelection) {
     else {
         console.log("Wow you broke it.");
     }
-}
+//}
 
 /*const playerSelection = "Rock";
 const computerSelection = computerPlay();
